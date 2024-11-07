@@ -1,0 +1,139 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:#c4b6fd;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 350px;
+    background-color: transparent;
+    background: linear-gradient(180deg, #c4b6fd, #93acdc);
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-family: "Afacad Flux", sans-serif;
+    position: relative;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(5px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.title{
+    font-size: 20px;
+    color: #362a66;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    position: relative;
+    text-align: center;
+    
+}
+
+.message, .signin{
+    padding: 10px 0px 10px 0px;
+    color:   #362a66;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.signin a{
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.signin a:hover{
+    color: #362a66;
+}
+
+.form label{
+    position: relative;
+}
+
+.form label input{
+    width: 100%;
+    padding: 10px 10px 20px 10px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+.form label input + span{
+    position: absolute;
+    left: 10px;
+    top: 15px;
+    color:grey;
+    font-size: 0.9em;
+    cursor: text;
+    transition: 0.3s ease;
+}
+
+.form label input:placeholder-shown + span{
+    top: 15px;
+    font-size: 0.9em;
+}
+
+.form label input:focus + span, 
+.form label input:valid + span{
+    top: 30px;
+    font-size: 0.7em;
+    font-weight: 600;
+}
+
+.form label input:valid + span{
+    color: #362a66;
+}
+
+.form label .icon{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: black;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+
+.submit{
+    border: none ;
+    outline: none;
+    background:  #362a66 ;
+    padding: 10px;
+    border-radius: 10px;
+    color:#fff;
+    font-size: 16px;
+    transform: 0.3s ease;
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+    font-size: 10px;
+  }
+
+.submit:hover{
+    background: #362a66 ;
+    transition: 0.3s ease;
+}
+
+
+
+
+

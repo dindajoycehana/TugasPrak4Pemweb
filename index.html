@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+
+    <script src="https://kit.fontawesome.com/8646b4f281.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+
+<body>
+    <form autocomplete="off" class="form" id="registrationForm" >
+        <p class="title"> Registration</p>
+        <p class="message">Sign Up Now and Get Full Access to Our Website</p>
+
+        <label>
+            <input type="text" id="username" required>
+            <span>Username</span>
+            <span class="error" id="usernameError"></span>
+        </label>
+        <label>
+            <input type="email" id="email" required>
+            <span>Email</span>
+            <span class="error" id="emailError"></span>
+        </label>
+        <label>
+            <input type="password" id="password" required>
+            <span>Password</span>
+            <span class="icon" id="togglePassword">
+                <i class="fa-regular fa-eye-slash"></i>
+            </span>
+            <span class="error" id="passwordError"></span>
+        </label>
+        <label>
+            <input type="password" id="passwordConfirm" required>
+            <span>Confirm Password</span>
+            <span class="icon" id="togglePasswordConfirm">
+                <i class="fa-regular fa-eye-slash"></i>
+            </span>
+            <span class="error" id="PasswordConfirmError"></span>
+        </label>
+
+        <button class="submit" >Submit</button>
+        <p class="signin">
+            Already have an account?
+            <a href="#"> Sign In</a>
+        </p>
+    </form>
+
+    <script src="main.js"></script>
+</body>
+</html>
